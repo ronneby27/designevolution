@@ -1,0 +1,89 @@
+#fullpage
+	.fullpage-content
+		position: relative
+	.slide_158
+		position: relative
+		overflow: hidden
+		.background
+			width: auto
+			height: auto
+			min-width: 100%
+			min-height: 100%
+			position: absolute
+			top: 50%
+			left: 50% 
+			transform: translate(-50%, -50%)
+			z-index: -1
+		.info_block
+			color: #fff
+			font-weight: 400
+			font-family: 'FuturaPT-Book'
+			width: 50%
+			background: rgba(0, 0, 0, 0.67)
+			// border: 1px solid rgba(255, 192, 0, 0.67) 
+			box-shadow: 9.7px 5.2px 10px #000, inset 0 0 7px rgba(255, 255, 255, 0.35)
+			position: absolute
+			top: 50px
+			right: 80px
+			padding: 50px 15px
+			.title
+				font-size: 35px
+				margin-bottom: 40px
+				text-align: center
+			.text	
+				font-size: 16px
+				ul
+					margin-bottom: 30px
+					li
+						font-size: 20px
+						&:before 
+							content: "- "
+	.slide_167
+		@extend .slide_158
+		.info_block
+			right: auto
+			left: 50px
+			width: 40%
+			.title
+				text-align: left
+	.slide_169
+		@extend .slide_158
+	.slide_171
+		@extend .slide_167
+		.info_block
+			.title
+				text-align: center
+@media (max-width: 1023px)
+	#fullpage
+		.slide_158
+			.info_block
+				width: 70%
+		.slide_167
+			.info_block
+				width: 70%
+@media (max-width: 767px)
+	#fullpage
+		.slide_158
+			.info_block
+				width: 90%
+				top: 10px
+				right: auto
+				left: 50%
+				padding: 15px
+				transform: translateX(-50%) 
+				.title
+					font-size: 20px
+					margin-bottom: 15px
+				.text
+					font-size: 12px
+					line-height: 12px
+					ul
+						li
+							font-size: 12px
+					p
+						line-height: 16px
+		.slide_167
+			.info_block
+				width: 90%
+				left: 50%
+
