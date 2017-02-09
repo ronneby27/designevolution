@@ -8,7 +8,7 @@ function fg_register_metabox() {
 
 	foreach ( $post_types as $post_type ) {
 
-		add_meta_box( 'featuredgallerydiv', __( 'Featured Gallery', 'featured-gallery' ), 'fg_display_metabox', $post_type, $context, $priority );
+		add_meta_box( 'featuredgallerydiv', __( 'Добавить фото в проект', 'featured-gallery' ), 'fg_display_metabox', $post_type, $context, $priority );
 
 	}
 
@@ -34,7 +34,7 @@ function fg_display_metabox() {
 		foreach ( $galleryArray as &$id ) {
 			$galleryHTML .= '<li>'.$button.'<img id="'.$id.'" src="'.wp_get_attachment_url( $id ).'"></li> ';
 		}
-		$selectText = __( 'Edit Selection', 'featured-gallery' );
+		$selectText = __( 'Изменить выбор', 'featured-gallery' );
 		$visible    = " visible";
 	} 
 	update_post_meta( $post->ID, 'fg_temp_metadata', $galleryString ); // Overwrite the temporary featured gallery data with the permanent data. This is a precaution in case someone clicks Preview Changes, then exits withing saving. ?>
@@ -47,7 +47,7 @@ function fg_display_metabox() {
 
 	<button class="button" id="fg_select"><?php echo $selectText; ?></button>
 
-	<button class="button<?php echo $visible.$oldfix; ?>" id="fg_removeall"><?php _e( 'Remove All', 'featured-gallery' ); ?></button>
+	<button class="button<?php echo $visible.$oldfix; ?>" id="fg_removeall"><?php _e( 'Убрать все', 'featured-gallery' ); ?></button>
 
 	<ul><?php echo $galleryHTML; ?></ul>
 

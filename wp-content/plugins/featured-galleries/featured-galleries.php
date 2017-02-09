@@ -1,12 +1,10 @@
 <?php
 /*
- * Plugin Name:       Featured Galleries
- * Plugin URI:        http://wordpress.org/plugins/featured-galleries/
- * Description:       WordPress ships with a Featured Image functionality. This adds a very similar functionality, but allows for full featured galleries with multiple images.
- * Version:           1.7.1
- * Author:            Andy Mercer
- * Author URI:        http://www.andymercer.net
- * Text Domain:       featured-galleries
+ * Plugin Name:       Галерея для проектов
+ * Version:           1.1.1
+ * Author:            Sergeysan27
+ * Author URI:        https://www.facebook.com/narutooor
+ * Text Domain:       галерея проектов
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
 */
